@@ -40,23 +40,3 @@ CetakDekat-Python/
 ├── README.md
 └── .gitignore
 ```
-
-## Cara Menjalankan Program
-1. Pastikan Python sudah terpasang.
-2. Buka folder project menggunakan VS Code.
-3. Buka terminal.
-4. Jalankan perintah berikut:
-
-```bash
-python main.py
-```
-
-## Cara Menjalankan Pengujian
-Untuk menjalankan unit testing, gunakan perintah:
-
-```bash
-python -m unittest discover -s tests -p "test*.py" -v
-```
-
-## Pengembang
-Project ini dibuat sebagai tugas UAS/UAP mata kuliah Pemrograman Terstruktur, Program Studi Sistem Informasi.
