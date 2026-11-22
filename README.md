@@ -1,27 +1,62 @@
 # CetakDekat - Python
 
-CetakDekat merupakan aplikasi sederhana untuk membantu pengguna melihat daftar tempat fotocopy dan menghitung estimasi biaya layanan fotocopy atau cetak dokumen.
+## Deskripsi Project
+CetakDekat merupakan aplikasi sederhana berbasis Python yang digunakan untuk mengelola informasi tempat fotocopy dan layanan cetak dokumen. Aplikasi ini dibuat untuk memudahkan pengguna dalam melihat informasi tempat fotocopy, mencari data, serta menghitung biaya layanan.
 
-## Fitur
-- Melihat daftar tempat fotocopy.
-- Memilih tempat fotocopy.
-- Memilih jenis layanan.
-- Memasukkan jumlah lembar.
-- Menghitung total biaya secara otomatis.
-- Validasi input pengguna.
+Project ini dikembangkan sebagai tugas UAS/UAP mata kuliah Pemrograman Terstruktur.
 
-## Teknologi
+## Fitur Aplikasi
+1. Menampilkan daftar tempat fotocopy.
+2. Menambahkan data tempat fotocopy.
+3. Mengubah data tempat fotocopy.
+4. Menghapus data tempat fotocopy.
+5. Mencari data berdasarkan ID, nama, atau kategori.
+6. Mengurutkan data berdasarkan nama dan harga.
+7. Menghitung biaya layanan fotocopy dan cetak dokumen.
+8. Menyimpan data menggunakan file CSV.
+
+## Teknologi yang Digunakan
 - Python
+- Tkinter untuk tampilan aplikasi (GUI).
+- CSV untuk penyimpanan data.
+- Unittest untuk pengujian program.
 
-## Struktur Program
-- main.py : Program utama dan menu aplikasi.
-- data.py : Penyimpanan data tempat fotocopy.
-- fungsi.py : Kumpulan fungsi program.
+## Struktur Project
+```text
+CetakDekat-Python/
+│
+├── data/
+│   └── tempat_fotocopy.csv
+│
+├── tests/
+│   └── test_services.py
+│
+├── main.py
+├── ui.py
+├── models.py
+├── storage.py
+├── services.py
+├── validasi.py
+├── README.md
+└── .gitignore
+```
 
-## Cara Menjalankan
-1. Pastikan Python sudah terinstal.
-2. Buka folder project melalui VS Code.
+## Cara Menjalankan Program
+1. Pastikan Python sudah terpasang.
+2. Buka folder project menggunakan VS Code.
 3. Buka terminal.
-4. Jalankan perintah:
+4. Jalankan perintah berikut:
 
+```bash
 python main.py
+```
+
+## Cara Menjalankan Pengujian
+Untuk menjalankan unit testing, gunakan perintah:
+
+```bash
+python -m unittest discover -s tests -p "test*.py" -v
+```
+
+## Pengembang
+Project ini dibuat sebagai tugas UAS/UAP mata kuliah Pemrograman Terstruktur, Program Studi Sistem Informasi.
